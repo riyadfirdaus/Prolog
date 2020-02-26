@@ -1,4 +1,4 @@
-program :- read(A), cetak(A) ,nl.
-	cetak([A|[]]):- \+ is_list(A), write(A).
-	cetak([A|B]):- cetak(B).
+program :- read(A), akhir(A) ,nl.
+	akhir([A|[]]):- write(A).
+	akhir([_|B]):- akhir(B).
 :- program.
